@@ -22,7 +22,8 @@
 
         <!-- fondo -->
         <a-entity class="fondo"
-            environment="preset: forest; groundColor: #f0f0f0; groundTexture: none; horizonColor: silver; skyColor:  blue; dressingColor: #ffff; "></a-entity>
+            environment="preset: forest; groundColor: #f0f0f0; groundTexture: none; horizonColor: silver; skyColor:  blue; dressingColor: #ffff">
+        </a-entity>
 
 
         <!--oso casa-->
@@ -32,24 +33,28 @@
             </a-entity>
         </a-entity>
 
-        <!--pinguinos-->
-        <a-entity class="pingui" position="-2.0 0.1 -6.7" scale=""
-            gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/igloodoghouse.glb?v=1705949377973"></a-entity>
-
+        <!--pinguinos espacio-->
+        <a-entity class="pingui" position="-13.22025 0.1 -4.52958" scale="" gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/igloodoghouse.glb?v=1705949377973"></a-entity>
+        
         <!-- arboles -->
         <a-entity position="100 -22.30689 -286.05144" visible="" scale="5 1.64 4.11" shadow="" gltf-model="https://cdn.glitch.me/164f55ea-4cfb-4e4e-bafe-17113710a962/pines_trees_and_bush.glb?v=1705951680693"></a-entity>
        
-        <!-- cubo -->
-        <a-entity
-            gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/Recurso%201.gltf?v=1706180353106"
-            scale="10 10 10"></a-entity>
-
+    
         <!-- pinguino de blender -->
-        <a-entity animation-mixer gltf-model="./assets/pinguino.glb" scale="0.4 0.4 0.4" position="0.2 0.8 -3.2"
-            rotation="0 90 0"></a-entity>
+        <a-entity animation-mixer="" gltf-model="./assets/pinguino.glb" scale="0.4 0.4 0.4" position="-10.06292 0.56122 -3.2" rotation="0 90 0"></a-entity>
 
         <!--oso blanco-->
-        <a-entity scale="0.1 0.1 0.1" position="2 0.48364 -3" gltf-model="./assets/osoblanco1.glb" class="osoblanco"></a-entity>
+        <a-entity scale="0.1 0.1 0.1" position="-2.22811 0.45136 -8.6875" gltf-model="./assets/osoblanco1.glb" class="osoblanco"></a-entity>
+
+        <!--oso blanco animado-->
+        <a-entity animation-mixer="" gltf-model="./assets/polar_bear.glb" scale="0.01 0.01 0.01" position="1.75298 -0.02039 -7.57967" rotation="0 360 0" class="osoanimado"></a-entity>
+
+        <!--Roca1-->
+        <a-entity scale="0.1 0.1 0.1" position="-3.158 -0.02084 -8.75735" gltf-model="./assets/rocahielo.glb" class="roca1"></a-entity>
+
+        <!--Roca2-->
+        <a-entity scale="" position="-0.10229 2.14133 -8.75735" gltf-model="./assets/icicle.glb" class="roca2"></a-entity>
+
 
     </a-scene>
     
