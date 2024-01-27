@@ -8,9 +8,8 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/23.1.1/tween.umd.js" integrity="sha512-J8rv5Qz++2kwDP7YUBqxm3LCtPXWghcqXvxPrLrk81E31eMA/tEAjKakXJJDQoy9tj+41+EDYDsD6Xc76lnT7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="js/script.js"></script>
+    
 
 </head>
 
@@ -22,25 +21,24 @@
             rotation="2.29 4.20996 0" visible="" position="0 5.93027 -0.33928"></a-sky>
 
         <!-- fondo -->
-        <a-entity
-            environment="preset: forest; groundColor: #f0f0f0; groundTexture: none; horizonColor: silver; skyColor: blue; dressingColor: #fcfcfc; shadow: true"></a-entity>
+        <a-entity class="fondo"
+            environment="preset: forest; groundColor: #f0f0f0; groundTexture: none; horizonColor: silver; skyColor:  blue; dressingColor: #ffff; "></a-entity>
 
 
         <!--oso casa-->
-        <a-entity animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
+        <a-entity class="igloo" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
             <a-entity scale="2.83 3.01 2.84" position="0.13403 -0.04253 5.41739"
                 gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/bear_in_an_igloo.glb?v=1705945147644">
             </a-entity>
         </a-entity>
 
         <!--pinguinos-->
-        <a-entity position="-2.0 0.1 -6.7" scale=""
+        <a-entity class="pingui" position="-2.0 0.1 -6.7" scale=""
             gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/igloodoghouse.glb?v=1705949377973"></a-entity>
 
         <!-- arboles -->
-        <a-entity position="100 -21.56 -170.78931" visible="" scale="5 1.64 4.11" shadow=""
-            gltf-model="https://cdn.glitch.me/164f55ea-4cfb-4e4e-bafe-17113710a962/pines_trees_and_bush.glb?v=1705951680693"></a-entity>
-
+        <a-entity position="100 -22.30689 -286.05144" visible="" scale="5 1.64 4.11" shadow="" gltf-model="https://cdn.glitch.me/164f55ea-4cfb-4e4e-bafe-17113710a962/pines_trees_and_bush.glb?v=1705951680693"></a-entity>
+       
         <!-- cubo -->
         <a-entity
             gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/Recurso%201.gltf?v=1706180353106"
@@ -50,5 +48,10 @@
         <a-entity animation-mixer gltf-model="./assets/pinguino.glb" scale="0.4 0.4 0.4" position="0.2 0.8 -3.2"
             rotation="0 90 0"></a-entity>
 
+        <!--oso blanco-->
+        <a-entity scale="0.1 0.1 0.1" position="2 0.48364 -3" gltf-model="./assets/osoblanco1.glb" class="osoblanco"></a-entity>
 
     </a-scene>
+    
+    
+</html>
