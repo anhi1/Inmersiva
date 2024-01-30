@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.rawgit.com/aframevr/aframe/v1.2.0/dist/aframe-html-shader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/cubos.js"></script>
 
 
 </head>
 
 <body>
-    <a-scene>
-        
+    <a-scene id="scene" physics="debug:true">
+
         <!-- fondo -->
         <a-entity class="fondo"
-            environment="preset: forest; groundColor: #f0f0f0; groundTexture: none; horizonColor: silver; skyColor:  blue; dressingColor: #ffff">
+            environment="preset: yavapai; groundColor: #f0f0f0; groundColor2: #c6d8e6; groundTexture:walkernoise; horizonColor: silver; skyColor:  blue; dressingColor: #ffff" position="0 -2 0">
         </a-entity>
 
         <!--copos-->
@@ -34,57 +39,67 @@
 
 
         <!--oso casa-->
-        <a-entity class="igloo" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
-            <a-entity scale="2.83 3.01 2.84" position="0.13403 -0.04253 5.41739"
-                gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/bear_in_an_igloo.glb?v=1705945147644">
-            </a-entity>
+        <a-entity scale="5 5 5" position="-20.55598 -0.73755 -3.9719" gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/bear_in_an_igloo.glb?v=1705945147644" rotation="0 90 0">
         </a-entity>
-
         <!--pinguinos espacio-->
-        <a-entity class="pingui" position="-13.22025 0.1 -4.52958" scale=""
-            gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/igloodoghouse.glb?v=1705949377973"></a-entity>
+        <a-entity class="pingui" position="-14.11647 -1.24 -20.73081" scale="" gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/igloodoghouse.glb?v=1705949377973"></a-entity>        
+        
 
-        <!-- arboles -->
-        <a-entity position="100 -22.30689 -286.05144" visible="" scale="5 1.64 4.11" shadow=""
-            gltf-model="https://cdn.glitch.me/164f55ea-4cfb-4e4e-bafe-17113710a962/pines_trees_and_bush.glb?v=1705951680693"></a-entity>
+        <!--arbol-->
+        <a-entity position="100 -22.30689 -270.9472" visible="" scale="5 1.64 4.11" shadow="" class="arbol" gltf-model="https://cdn.glitch.me/164f55ea-4cfb-4e4e-bafe-17113710a962/pines_trees_and_bush.glb?v=1705951680693"></a-entity>
 
-
-        <!-- pinguino de blender -->
-        <a-entity animation-mixer="" gltf-model="./assets/pinguino.glb" scale="0.4 0.4 0.4"
-            position="-10.06292 0.56122 -3.2" rotation="0 90 0"></a-entity>
-
+        
         <!--oso blanco-->
-        <a-entity scale="0.1 0.1 0.1" position="-2.22811 0.45136 -8.6875" gltf-model="./assets/osoblanco1.glb"
-            class="osoblanco"></a-entity>
+        <a-entity scale="0.1 0.1 0.1" position="-4.75353 -1.24143 -18.3448" gltf-model="./assets/osoblanco1.glb" class="osoblanco"></a-entity>
 
         <!--oso garra-->
         <a-entity scale="0.01 0.01 0.01" position="-2.22811 2.57151 -8.6875" gltf-model="./assets/bearclaw.glb"
             class="osoblanco"></a-entity>
 
         <!--oso walk-->
-        <a-entity animation-mixer="" gltf-model="./assets/polar_bear.glb" scale="0.01 0.01 0.01"
-            position="1.75298 -0.02039 -7.57967" rotation="0 360 0" class="osoanimado"></a-entity>
-
+        <a-entity animation-mixer="" gltf-model="./assets/polar_bear.glb" scale="0.01 0.01 0.01" position="-2.18362 -1.8097 -9.73317" rotation="0 360 0" class="osoanimado"></a-entity>
+        
         <!--Roca1-->
-        <a-entity scale="0.1 0.1 0.1" position="-3.158 -0.02084 -8.75735" gltf-model="./assets/rocahielo.glb"
-            class="roca1"></a-entity>
-
+        <a-entity scale="0.1 0.1 0.1" position="0.28246 -1.79477 -5.98824" gltf-model="./assets/rocahielo.glb" class="roca1"></a-entity>
+        
         <!--Roca2-->
-        <a-entity scale="" position="-0.10229 2.14133 -8.75735" gltf-model="./assets/icicle.glb"
-            class="roca2"></a-entity>
+        <a-entity scale="" position="-6.60821 1.87 -14.93118" gltf-model="./assets/icicle.glb" class="roca2"></a-entity>
 
         <!--oso run-->
-        <a-entity animation-mixer="" gltf-model="./assets/polar_run.glb" scale="2 2 2" position="4 -0.03494 -7.57967"
-            rotation="0 360 0" class="osorun"></a-entity>
+        <a-entity animation="property: rotation; to: 0 -360 0; loop: true; dur: 20000">
+            <a-entity gltf-model="./assets/polar_run.glb" scale="2 2 2" position="3.21016 -1.715 -13.41815" oso_run="" rotation="" class="osorun"></a-entity>
+        </a-entity>
 
         <!--water transparente-->
-        <a-entity scale="0.1 0.1 0.1 " position="-0.10229 2.14133 -8.75735" gltf-model="./assets/water.glb"
-            class="water"></a-entity>
+        <a-entity scale="0.1 0.1 0.1" position="3.0422 0.681 -17.95179" gltf-model="./assets/water.glb" class="water"></a-entity>
+
+        <!--cubo3-->
+        <a-entity scale="0.05 0.05 0.05" position="3.29741 -0.77866 -11.357" gltf-model="./assets/cubo3.glb" class="cubo3"></a-entity>
+
+        <!--iceland_scene-->
+        <a-entity scale="0.2 0.2 0.2" position="6.832 -1.018 -27.96711" gltf-model="./assets/iceland_scene_for_canimatic.glb" class="scena hielo" rotation="0 -22.22 0"></a-entity>        
+        
+        <!--texto-->
+        <a-entity id="description" position="0 6 -6">
+            <a-plane position="0 -1 0" color="#12062d" width="3" height="1" emissive="#461aad">
+                <a-image src="assets/icono.svg" width="1" height="0.7" position="-0.69707 0 0.01" material=""
+                    geometry=""></a-image>
+                <a-text position="-0.13633 -0.03109 0" align="left" value="Oso polar">
+                </a-text>
+            </a-plane>
+        </a-entity>
+
+        <!--casa-pinguinos-->
+        <a-entity scale="" position="-23.31255 -2.06368 -18.24992" gltf-model="./assets/ice_glacier.glb" class="casapinguinos" rotation=""></a-entity>
 
 
-
-
+        <!--familiapinguinos-->
+        <a-entity class="pinfami" scale="3 3 3" position="-18.72919 0.22279 -7.87186" gltf-model="./assets/pinguinosgrupo.glb" rotation="0 45 0"></a-entity>        
+        
+        <a-camera><a-cursor></a-cursor></a-camera>
+        <a-plane static-body color="grey" rotation="-90 0 0" scale="400 400 400" position="0 -2.03827 0"></a-plane>
+        <a-box spheregenerator dynamic-body color="blue" scale="0.5 0.5 0.5" position="-0.82233 -1.31174 -5.05454" class="cuadrado" material="" geometry="" velocity=""></a-box>
     </a-scene>
-
+    
 
 </html>
