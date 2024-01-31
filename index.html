@@ -27,8 +27,8 @@
 
         <!--copos-->
         <a-sky src="assets/copos.png" opacity="0.5" repeat="15 10" scale="0.2 0.4 0.2"
-            animation="property: rotation; to: 90 0 0; dur: 16000; loop: true" class="copo" material="" geometry=""
-            rotation="2.29 4.20996 0" visible="" position="0 5.93027 -0.33928"></a-sky>
+            animation="property: rotation; to: 90 0 0; dur: 16000; loop: true" class="copo" rotation="2.29 4.20996 0"
+            position="0 5.93027 -0.33928"></a-sky>
 
         <!--nube-->
         <a-sky src="./assets/nube.png" opacity="0.99" repeat="1 1" shader="flat" rotation="10 0 -20" scale="0.1 0.1 0.1"
@@ -93,11 +93,11 @@
                 scale="0.79 1.04 1"></a-plane>
             <a-text
                 value="Los osos polares estan clasificados como mamiferos marinos porque pasan la mayor parte de su vida en el hielo marino del oceano artico"
-                color="white" align="center" scale="0.7 0.7 0.7" font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt"
-                text="">
+                color="white" align="center" scale="0.7 0.7 0.7" font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
             </a-text>
             <a-image src="assets/place.svg" position="0.06599 0.88 -0.5" width="1" height="2"
-                scale="0.6 0.29 0.00001"></a-image> </a-entity>
+                scale="0.6 0.29 0.00001"></a-image>
+        </a-entity>
 
         <!-- Botón -->
         <a-circle id="miBoton1" position="-1.75085 2.00246 -5" radius="0.3" opacity="1" cursor-listener1
@@ -137,8 +137,8 @@
                 color="white" align="center" scale="0.7 0.7 0.7" font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt"
                 text="">
             </a-text>
-            <a-image src="assets/foca.svg" position="0 0.88 -0.5" width="1" height="2" scale="0.6 0.29 0.00001"
-                material="" geometry=""></a-image>
+            <a-image src="assets/foca.svg" position="0 0.88 -0.5" width="1" height="2"
+                scale="0.6 0.29 0.00001"></a-image>
         </a-entity>
 
         <!-- Botón -->
@@ -157,7 +157,12 @@
         <a-entity class="pinfami" scale="3 3 3" position="-18.729 1.058 -7.872" gltf-model="./assets/pinguinosgrupo.glb"
             rotation="0 45 0"></a-entity>
 
-
+        <!--roca3-->
+        <a-entity class="roca3" scale="3 3 3" position="-10.923 -0.879 -0.65746" gltf-model="./assets/block.glb" rotation="0 47.19 0"></a-entity>        <!--escena4-->
+        
+        
+        <a-entity class="escena4" scale="3 3 3" position="31.2609 2.94539 -3.73951" gltf-model="./assets/ice_swim.glb" rotation="-0.31 90 -0.8700000000000001"></a-entity>
+        
         <a-camera><a-cursor></a-cursor></a-camera>
         <a-plane static-body color="grey" rotation="-90 0 0" scale="400 400 400" position="0 -1.08248 0"
             class="plano"></a-plane>

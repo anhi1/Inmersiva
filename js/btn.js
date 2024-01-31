@@ -1,14 +1,14 @@
 AFRAME.registerComponent('cursor-listener1', {
     init: function () {
-        var el = this.el;
+        let el = this.el;
 
         // Añadir evento click al botón
         el.addEventListener('click', function () {
             // Obtener el elemento de texto
-            var texto = document.getElementById('miTexto1');
+            let texto = document.getElementById('miTexto1');
 
             // Obtener el elemento del botón
-            var boton = document.getElementById('miBoton1');
+            let boton = document.getElementById('miBoton1');
 
             // Toggle para mostrar/ocultar el texto
             if (texto.getAttribute('visible')) {
@@ -25,15 +25,15 @@ AFRAME.registerComponent('cursor-listener1', {
 
 AFRAME.registerComponent('cursor-listener2', {
     init: function () {
-        var el = this.el;
+        let el = this.el;
 
         // Añadir evento click al botón
         el.addEventListener('click', function () {
             // Obtener el elemento de texto
-            var texto = document.getElementById('miTexto2');
+            let texto = document.getElementById('miTexto2');
 
             // Obtener el elemento del botón
-            var boton = document.getElementById('miBoton2');
+            let boton = document.getElementById('miBoton2');
 
             // Toggle para mostrar/ocultar el texto
             if (texto.getAttribute('visible')) {
@@ -50,15 +50,15 @@ AFRAME.registerComponent('cursor-listener2', {
 
 AFRAME.registerComponent('cursor-listener3', {
     init: function () {
-        var el = this.el;
+        let el = this.el;
 
         // Añadir evento click al botón
         el.addEventListener('click', function () {
             // Obtener el elemento de texto
-            var texto = document.getElementById('miTexto3');
+            let texto = document.getElementById('miTexto3');
 
             // Obtener el elemento del botón
-            var boton = document.getElementById('miBoton3');
+            let boton = document.getElementById('miBoton3');
 
             // Toggle para mostrar/ocultar el texto
             if (texto.getAttribute('visible')) {
