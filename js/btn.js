@@ -13,10 +13,10 @@ AFRAME.registerComponent('cursor-listener1', {
             // Toggle para mostrar/ocultar el texto
             if (texto.getAttribute('visible')) {
                 texto.setAttribute('visible', false);
-                boton.setAttribute('color', '#4d66bf'); // Cambiar color del botón
+                boton.setAttribute('color', '#4d66bf');
             } else {
                 texto.setAttribute('visible', true);
-                boton.setAttribute('color', '#28bacc'); // Cambiar color del botón
+                boton.setAttribute('color', '#28bacc');
             }
         });
     }

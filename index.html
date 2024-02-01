@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oso polar</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.rawgit.com/aframevr/aframe/v1.2.0/dist/aframe-html-shader.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/cubos.js"></script>
     <script src="js/btn.js"></script>
@@ -41,11 +40,11 @@
         </a-entity>
 
         <!--pinguinos espacio-->
-        <a-entity class="pingui" position="-10.08807 -0.26914 -20.73081" scale=""
+        <a-entity class="pingui" position="-10.08807 -0.26914 -20.73081"
             gltf-model="https://cdn.glitch.global/164f55ea-4cfb-4e4e-bafe-17113710a962/igloodoghouse.glb?v=1705949377973"></a-entity>
 
         <!--arbol-->
-        <a-entity position="100 -22.30689 -270.9472" visible="" scale="5 1.64 4.11" shadow="" class="arbol"
+        <a-entity position="100 -22.30689 -270.9472" visible="" scale="5 1.64 4.11" class="arbol"
             gltf-model="https://cdn.glitch.me/164f55ea-4cfb-4e4e-bafe-17113710a962/pines_trees_and_bush.glb?v=1705951680693"></a-entity>
 
 
@@ -54,12 +53,13 @@
             class="pingunio" rotation="0 90 0"></a-entity>
 
         <!--oso blanco-->
-        <a-entity scale="0.1 0.1 0.1" position="-8.15413 0.277 -17.354" gltf-model="./assets/osoblanco1.glb"
-            class="osoblanco"></a-entity>
-
-        <!--oso walk-->
-        <a-entity animation-mixer="" gltf-model="./assets/polar_bear.glb" scale="0.015 0.015 0.015"
-            position="-3.15088 -1.42679 -11.26312" rotation="0 360 0" class="osoanimado"></a-entity>
+        <a-entity scale="0.1 0.1 0.1" position="-18.23938 0.277 -18.288" gltf-model="./assets/osoblanco1.glb"
+            class="osoblanco" rotation="0 90 0"></a-entity>
+        
+            <!--oso walk-->
+        <a-entity animation-mixer gltf-model="./assets/polar_bear.glb" scale="0.015 0.015 0.015"
+            position="-3.15088 -1.42679 -11.26312" rotation="0 360 0" class="osoanimado">
+        </a-entity>
 
         <!--Roca1-->
         <a-entity scale="0.1 0.1 0.1" position="0.28246 -1.79477 -5.98824" gltf-model="./assets/rocahielo.glb"
@@ -70,8 +70,8 @@
 
         <!--oso run-->
         <a-entity animation="property: rotation; to: 0 -360 0; loop: true; dur: 20000">
-            <a-entity gltf-model="./assets/polar_run.glb" scale="3 3 3" position="3.21016 -1.715 -13.41815" oso_run=""
-                rotation="" class="osorun"></a-entity>
+            <a-entity gltf-model="./assets/polar_run.glb" scale="2 2 2" position="4.56841 -0.95721 -14.04761"
+                oso_run></a-entity>
         </a-entity>
 
         <!--water transparente-->
@@ -79,7 +79,7 @@
             class="water"></a-entity>
 
         <!--cubo3-->
-        <a-entity scale="0.05 0.05 0.05" position="3.29741 -0.77866 -11.357" gltf-model="./assets/cubo3.glb"
+        <a-entity scale="0.05 0.05 0.05" position="7.11354 -0.25495 -15.70213" gltf-model="./assets/cubo3.glb"
             class="cubo3"></a-entity>
 
         <!--iceland_scene-->
@@ -102,7 +102,7 @@
         <!-- Botón -->
         <a-circle id="miBoton1" position="-1.75085 2.00246 -5" radius="0.3" opacity="1" cursor-listener1
             color="#28bacc">
-            <a-text value="click" align="center" color="#ffff" text="">
+            <a-text value="click" align="center" color="#ffff">
             </a-text>
         </a-circle>
 
@@ -113,8 +113,7 @@
                 scale="0.79 1.04 1"></a-plane>
             <a-text
                 value="Cuentan con una gruesa capa de grasa corporal y un recubrimiento a prueba de agua que los aisla del aire y el agua fria."
-                color="white" align="center" scale="0.7 0.7 0.7" font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt"
-                text="">
+                color="white" align="center" scale="0.7 0.7 0.7" font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt">
             </a-text>
             <a-image src="assets/icono.svg" position="0 0.88 -0.5" width="1" height="2"
                 scale="0.6 0.29 0.00001"></a-image>
@@ -123,15 +122,15 @@
         <!-- Botón -->
         <a-circle id="miBoton2" position="-16.314 0.18891 -19.435" radius="0.3" opacity="1" cursor-listener2
             color="#4d66bf">
-            <a-text value="click" align="center" position="" color="#ffff" text="">
+            <a-text value="click" align="center" position="" color="#ffff">
             </a-text>
         </a-circle>
 
 
         <!-- 3Texto a mostrar/ocultar -->
         <a-entity id="miTexto3" position="5.62494 1 -6" visible="false" class="texto3" rotation="">
-            <a-plane color="#282ca9" width="5" height="0.8" position="0 0 -0.01" opacity="0.7" scale="0.79 1.04 1"
-                material="" geometry=""></a-plane>
+            <a-plane color="#282ca9" width="5" height="0.8" position="0 0 -0.01" opacity="0.7"
+                scale="0.79 1.04 1"></a-plane>
             <a-text
                 value="Los osos polares pasan mas del 50% de su tiempo buscando comida. Un oso polar puede atrapar solo una o dos de las diez focas que caza."
                 color="white" align="center" scale="0.7 0.7 0.7" font="https://cdn.aframe.io/fonts/DejaVu-sdf.fnt"
@@ -151,18 +150,21 @@
 
         <!--casa-pinguinos-->
         <a-entity scale="" position="-23.313 -1.30486 -18.25" gltf-model="./assets/ice_glacier.glb"
-            class="casapinguinos" rotation=""></a-entity>
+            class="casapinguinos"></a-entity>
 
         <!--familiapinguinos-->
         <a-entity class="pinfami" scale="3 3 3" position="-18.729 1.058 -7.872" gltf-model="./assets/pinguinosgrupo.glb"
             rotation="0 45 0"></a-entity>
 
         <!--roca3-->
-        <a-entity class="roca3" scale="3 3 3" position="-10.923 -0.879 -0.65746" gltf-model="./assets/block.glb" rotation="0 47.19 0"></a-entity>        <!--escena4-->
-        
-        
-        <a-entity class="escena4" scale="3 3 3" position="31.2609 2.94539 -3.73951" gltf-model="./assets/ice_swim.glb" rotation="-0.31 90 -0.8700000000000001"></a-entity>
-        
+        <a-entity class="roca3" scale="3 3 3" position="-10.923 -0.879 -0.65746" gltf-model="./assets/block.glb"
+            rotation="0 47.19 0"></a-entity>
+
+
+        <!--escena4-->
+        <a-entity class="escena4" scale="3 3 3" position="31.2609 2.94539 -3.73951" gltf-model="./assets/ice_swim.glb"
+            rotation="-0.31 90 -0.8700000000000001"></a-entity>
+
         <a-camera><a-cursor></a-cursor></a-camera>
         <a-plane static-body color="grey" rotation="-90 0 0" scale="400 400 400" position="0 -1.08248 0"
             class="plano"></a-plane>
