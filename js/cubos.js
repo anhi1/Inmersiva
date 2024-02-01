@@ -1,7 +1,7 @@
 AFRAME.registerComponent('spheregenerator', {
   init: function () {
-    let button = this.el;
-    button.addEventListener('click', function () {
+    let cubo = this.el;
+    cubo.addEventListener('click', function () {
       let scene = document.querySelector('#scene');
       let newBox = document.createElement('a-sphere');
 
