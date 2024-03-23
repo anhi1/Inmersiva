@@ -24,3 +24,8 @@ Personajes en blender
 <img src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" width="75" height="75" style="max-width: 100%;">
 
 <img src="https://download.blender.org/branding/blender_logo_socket.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 1800px; height: 50px; margin: 2px 0px; width: 150px;" alt="Logo — blender.org" jsname="kn3ccd" aria-hidden="false">
+
+# fONT GENERATOR
+https://msdf-bmfont.donmccurdy.com/
+![alt text](image.png)
+
