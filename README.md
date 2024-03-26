@@ -27,5 +27,6 @@ Personajes en blender
 
 # fONT GENERATOR
 https://msdf-bmfont.donmccurdy.com/
+https://github.com/MAD-DW-TI-P2/A-frame/tree/main/apiResults3d
 ![alt text](image.png)
 
